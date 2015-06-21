@@ -26,7 +26,13 @@ a {
 #header {
     padding: 10px 50px 10px 10px;
     text-align: left;
-    background:#000;
+/*    background:-webkit-linear-gradient(top,#00CCE4,#1A80C5,#3333C6 );
+*/
+    background:#10a0ea;
+     -webkit-box-shadow:0 2px 5px 0px #CCC;
+    -moz-box-shadow:0 2px 5px 0px #CCC;
+    -o-box-shadow:0 2px 5px 0px #CCC;
+    box-shadow:0 2px 5px 0px #CCC;
 }
 .main_title {
     padding: 10px;
@@ -78,20 +84,21 @@ legend {
 /*主内容区*/
 
 .col-main .mainarea{
-    margin-left: 230px;
+    margin-left: 250px;
     min-height: 600px;
 }
 .col-sub{
     margin-left: -100%;	
     width: 230px;
+    height: 100%;
 }
 
 .content .sidebar {
-    background: #3C9;
+    /*background: #3C9;*/
     padding-bottom: 20px;
 }
 .sidebar ul {
-    background:#F60;
+    /*background:#F60;*/
     width:80%;
     margin:20px auto 0 auto;
     padding:5px 0;
@@ -100,14 +107,14 @@ legend {
     text-align:center;
     width:100%;
     padding:10px 0;
-    border-top:1px solid #FFF;
 }
-.sidebar li:first-child {
+/*.sidebar li:first-child {
     border-top:none;
-}
+}*/
 .sidebar li:hover,
  .sidebar li.cur{
-    background:#FFF;
+    background:#F5F5F5;
+    border-left:1px solid #0e90d2;
     -webkit-transition:.3s;
     -moz-transition:.3s;
     -o-transition:.3s;
@@ -116,17 +123,18 @@ legend {
 }
 .sidebar li:hover a ,
  .sidebar li.cur a{
-    color:#F00;
+    color:#0e90d2;
     text-decoration:none;
 }
 .sidebar li a {
-    color:#FFF;
+    color:#000;
 }
 .content .mainarea {
     float: left;
     width: 900px;
-    background: #EEF5E8;
-    text-align:left;
+/*    background: #EEE;
+*/    text-align:left;
+    border-left: 1px solid #EEE;
     padding:20px 30px 10px 30px;
     display:none;
 }
@@ -136,7 +144,9 @@ legend {
     border-bottom:1px solid #3CF;
 }
 .mainarea h3 {
-    padding-bottom:10px;
+    margin-bottom:10px;
+    padding-left: 15px;
+    border-left: 1px solid #10a0ea;
 }
 .mainarea ul li {
     margin-bottom:10px;
@@ -155,10 +165,14 @@ legend {
 .mainarea ul li span {
     padding-left:30px;
 }
-.mainarea section {
-    padding:10px;
+.mainarea .mod {
+    padding-top:30px;
+    border-top: 1px solid #DDD;
 }
-
+.mainarea .mod:first-child{
+    border: none;
+    padding-top: 0;
+}
 /*sitemap*/
 
  article.blog ul li a:hover {
@@ -172,11 +186,11 @@ legend {
     float:left;
     width:auto;
     padding:3px 5px;
-    border:1px solid #F96;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -o-border-radius:10px;
-    border-radius:10px;
+    border:1px solid #0e90d2;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius:4px;
     text-align:center;
     margin:0 5px 10px 5px;
 }
@@ -185,10 +199,10 @@ legend {
     -moz-transition:.2s;
     -o-transition:.2s;
     transition:.2s;
-    -webkit-box-shadow:0 0 3px 1px #FF6633;
-    -moz-box-shadow:0 0 3px 1px #FF6633;
-    -o-box-shadow:0 0 3px 1px #FF6633;
-    box-shadow:0 0 3px 1px #FF6633;
+    -webkit-box-shadow:0 0 4px 0px #0e90d2;
+    -moz-box-shadow:0 0 4px 0px #0e90d2;
+    -o-box-shadow:0 0 4px 0px #0e90d2;
+    box-shadow:0 0 4px 0px #0e90d2;
 }
 .blog ul li:hover a:hover {
     text-decoration: none;
@@ -199,7 +213,7 @@ legend {
 }
 
 .footer {
-    background: #000;
+    background: #4C4747;
     color: #FFF;
     margin-top: 20px;
 }
@@ -220,7 +234,7 @@ legend {
 .footer_nav ul li a {
     display: block;
     text-decoration: none;
-    color: #FFF;
+    color: #CCC;
     -webkit-transition:.3s;
     -moz-transition:.3s;
     -o-transition:.3s;
@@ -228,7 +242,7 @@ legend {
     transition:.3s;
 }
 .footer_nav ul li a:hover {
-    background: #F90;
+    color: #FFF;
     text-decoration: none;
 }
 
