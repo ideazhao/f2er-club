@@ -12,35 +12,32 @@ article {
 a {
     text-decoration:none;
 }
+
 /*effect*/
+
  .radius {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
 }
-header {
-    padding: 10px;
+
+/*头部*/
+
+#header {
+    padding: 10px 50px 10px 10px;
     text-align: left;
-    margin-bottom: 10px;
     background:#000;
 }
-h1 {
+.main_title {
     padding: 10px;
-    font-size:20px;
+    font-size:34px;
     color:#FFF;
 }
-h2 {
-    color: #F09;
+.slogan {
+    color: #FFF;
+    margin-top: 20px;
 }
-cite {
-    font-style: normal;
-    color: #FF6;
-}
-cite time {
-    padding: 0 5px;
-    font-size: 12px;
-    font-style: italic;
-}
+
 form {
     background: #069;
     text-align: left;
@@ -77,78 +74,57 @@ legend {
     margin: 0;
     padding: 0;
 }
-footer {
-    background: #000;
-    color: #FFF;
-    margin: 0;
-    position: relative;
-    height: 45px;
+
+/*主内容区*/
+
+.col-main .mainarea{
+    margin-left: 230px;
+    min-height: 600px;
 }
-footer nav {
-    width: 60%;
-    margin:0 auto;
+.col-sub{
+    margin-left: -100%;	
+    width: 230px;
 }
-nav ul {
-    overflow: hidden;
-}
-nav ul li {
-    float: left;
-    width: 30%;
-    list-style: none;
-    height: 40px;
-    line-height: 40px;
-}
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: #FFF;
-}
-nav ul li a:hover {
-    background: #F90;
-}
-.content {
-    -webkit-display: flex;
-    display: flex;
-    -webkit-flex-flow: row;
-}
-.content aside {
-    width: 20%;
-    height: 300px;
+
+.content .sidebar {
     background: #3C9;
-    margin-right: 1%;
+    padding-bottom: 20px;
 }
-aside ul {
+.sidebar ul {
     background:#F60;
-    width:60%;
+    width:80%;
     margin:20px auto 0 auto;
-    padding:5px;
+    padding:5px 0;
 }
-aside li {
+.sidebar li {
     text-align:center;
     width:100%;
     padding:10px 0;
-    border-top:1px solid #CCC;
+    border-top:1px solid #FFF;
 }
-aside li:first-child {
+.sidebar li:first-child {
     border-top:none;
 }
-aside li:hover {
-    background:#CCC;
+.sidebar li:hover,
+ .sidebar li.cur{
+    background:#FFF;
     -webkit-transition:.3s;
     -moz-transition:.3s;
     -o-transition:.3s;
     -ms-transition:.3s;
     transition:.3s;
 }
-aside li:hover a {
+.sidebar li:hover a ,
+ .sidebar li.cur a{
     color:#F00;
     text-decoration:none;
 }
-aside li a {
+.sidebar li a {
     color:#FFF;
 }
 .content .mainarea {
-    width: 79%;
+    float: left;
+    width: 900px;
     background: #EEF5E8;
     text-align:left;
     padding:20px 30px 10px 30px;
@@ -182,7 +158,9 @@ aside li a {
 .mainarea section {
     padding:10px;
 }
+
 /*sitemap*/
+
  article.blog ul li a:hover {
     text-decoration:underline;
 }
@@ -193,7 +171,7 @@ aside li a {
 .blog ul li {
     float:left;
     width:auto;
-    padding:6px;
+    padding:3px 5px;
     border:1px solid #F96;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
@@ -218,6 +196,51 @@ aside li a {
 .blog ul li a {
     color:#000;
     width: auto;
+}
+
+.footer {
+    background: #000;
+    color: #FFF;
+    margin-top: 20px;
+}
+.footer .footer_nav {
+    width: 60%;
+    margin:0 auto;
+}
+.footer_nav ul {
+    overflow: hidden;
+}
+.footer_nav ul li {
+    float: left;
+    width: 30%;
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+}
+.footer_nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    transition:.3s;
+}
+.footer_nav ul li a:hover {
+    background: #F90;
+    text-decoration: none;
+}
+
+/*作者*/
+
+.author{
+    font-style: normal;
+}
+.author time {
+    padding: 0 5px;
+    font-size: 12px;
+    font-style: italic;
 }
 /*@-webkit-keyframes left { 0% {
  -webkit-transform:rotateZ(30deg);
@@ -258,15 +281,15 @@ aside li a {
     }
 }
 @media screen and (max-width:800px) {
-    header {
+    #header {
         overflow:hidden;
         padding:2%;
         margin:0;
     }
-    header hgroup {
+    #header hgroup {
         float:left;
     }
-    header cite {
+    #header cite {
         float:right;
         padding-top:8%;
     }
@@ -277,7 +300,7 @@ aside li a {
         width:100%;
         -webkit-flex-flow: column;
     }
-    .content aside {
+    .content .sidebar {
         width:100%;
         height:auto;
         background:none;
@@ -285,12 +308,12 @@ aside li a {
     .radius {
         -webkit-border-radius:0;
     }
-    .content aside ul {
+    .content .sidebar ul {
         overflow:hidden;
         margin:0;
         width:auto;
     }
-    .content aside ul li {
+    .content .sidebar ul li {
         float:left;
         width:18%;
         border-top:none;
