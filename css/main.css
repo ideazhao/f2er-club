@@ -2,7 +2,7 @@
  
 /* CSS Document */
  body {
-    font: 14px"Microsoft YaHei";
+    font: 14px "Microsoft YaHei";
     text-align: center;
 }
 article {
@@ -187,29 +187,34 @@ legend {
 
 .footer {
     background: #4C4747;
-    color: #FFF;
     margin-top: 20px;
     padding: 20px 0;
     font-family: "Arial";
+    color: #CCC;
 }
 .footer .footer_nav {
-    width: 60%;
+    width: 980px;
     margin:0 auto;
 }
 .footer_nav ul {
     overflow: hidden;
+    text-align: left;
 }
 .footer_nav ul li {
     float: left;
-    width: 30%;
+    width: 420px;
+    padding: 0 20px;
     list-style: none;
-    height: 40px;
-    line-height: 40px;
+    line-height: 20px;
 }
-.footer_nav ul li a {
-    display: block;
-    text-decoration: none;
+.footer_nav ul li .author_info{
+    line-height: 1.5;
+}
+.footer_nav ul li a{
     color: #CCC;
+}
+.footer_nav ul li .author_img_blog {
+    text-decoration: none;
     transition:.3s;
 }
 .footer_nav ul li a:hover {
@@ -223,8 +228,8 @@ legend {
     font-style: normal;
 }
 .author img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     vertical-align: middle;
     margin-right: 10px;
@@ -396,20 +401,39 @@ legend {
     padding: 15px;
 }
 
+/*书籍*/
+
+.book .off{
+    position: relative;
+}
+.book .off:after{
+    content: "已下架";
+    position:absolute;
+    color: #F00;
+    left: 50%;
+    bottom: 0px;
+    font-size: 12px;
+}
 /*微信公众号*/
 
 .public_media{
     padding-bottom: 50px;
 }
 .public_media ul{
-    padding-bottom: 30px;
+    padding-bottom: 120px;
 }
 .public_media ul li{
     padding:15px;
+    position: relative;
 }
 .public_media ul li  .erwei{
+    position: absolute;
+    left: 0;
+    bottom:-115px;
     transition:.5s;
     display: none;
+    background: #FFF;
+    box-shadow: 0 0 8px 2px #CCC;
 }
 .public_media ul li img{
     width: 100px;
