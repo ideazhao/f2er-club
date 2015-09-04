@@ -3,7 +3,7 @@
 /* CSS Document */
  body {
     font-size: 14px;
-    font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;;
+    font-family: "Microsoft YaHei";
     text-align: center;
 }
 article {
@@ -237,8 +237,10 @@ legend {
     height: 60px;
     border-radius: 50%;
     vertical-align: middle;
-    margin-right: 10px;
     transition:.5s;
+}
+.contact_cont{
+    margin-left: 30px;
 }
 .author img:hover{
     -webkit-transform:rotateZ(360deg);
@@ -462,7 +464,13 @@ legend {
 .about .mod a{
     color: #0e90d2;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
+    body{
+        font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    }
+    a{
+        -webkit-tap-highlight-color:rgba(255,255,255,0);
+    }
     /*头部*/
     #header{
         padding-right: 0;
@@ -564,7 +572,7 @@ legend {
         width: auto;
     }
     .main-wrap{
-        padding-top: 150px;
+        padding-top: 160px;
     }
     .col-main{
         float: none;
