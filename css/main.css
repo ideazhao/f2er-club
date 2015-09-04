@@ -2,7 +2,8 @@
  
 /* CSS Document */
  body {
-    font: 14px "Microsoft YaHei";
+    font-size: 14px;
+    font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;;
     text-align: center;
 }
 article {
@@ -173,7 +174,7 @@ legend {
     text-align: center;
 }
 .main_title .title-txt h1{
-    margin-bottom: -20px;
+    margin-bottom: -10px;
 }
 .main_title .title-txt span{
     font-size: 12px;
@@ -181,6 +182,7 @@ legend {
 .slogan {
     color: #FFF;
     margin-top: 20px;
+    line-height: 20px;
 }
 
 /*底部*/
@@ -253,7 +255,7 @@ legend {
     transition:.5s;
 }
 .col-main .mainarea.over{
-    margin-left: 150px;
+    margin-left: 180px;
 }
 .col-sub{
     margin-left: -100%; 
@@ -292,8 +294,8 @@ legend {
 }
 .sidebar_list.over{
     position:fixed;
-    left: 0;
     top:86px;
+    left: 23px;
     bottom:100px;
     width:134px;
 }
@@ -375,7 +377,7 @@ legend {
 .item ul {
     overflow:hidden;
     padding:5px 0;
-    margin:20px 0;
+    margin:20px 0 0 0;
 }
 .item ul li {
     float:left;
@@ -383,7 +385,7 @@ legend {
     border:1px solid #0e90d2;
     border-radius:4px;
     text-align:center;
-    margin:0 10px 20px 5px;
+    margin:0 10px 10px 5px;
     cursor: pointer;
      transition:.1s ease-in;
 }
@@ -456,8 +458,147 @@ legend {
 .about .mod a{
     color: #0e90d2;
 }
-
- @media screen (min-width:800px) and (max-width:1000px) {
+@media screen and (max-width: 500px){
+    /*头部*/
+    #header{
+        padding-right: 0;
+        position: fixed;
+       top:0;
+        width: 100%;
+    }
+    .main_title{
+        padding: 5px 0 0 0;
+        font-size: 14px;
+        width: 100%;
+    }
+    .main_title i{
+        width: 30px;
+        height: 30px;
+    }
+    .main_title .red{
+        background-size: 30px;
+        left: 20px;
+        top:-10px;
+    }
+    .main_title .blue{
+        background-size: 30px;
+        left: 5px;
+        top:0;
+    }
+    .main_title .green{
+        background-size: 30px;
+        left: 35px;
+        top:0;
+    }
+    .main_title .title-txt{
+        margin-left: 70px;
+    }
+    .main_title .title-txt h1{
+        margin-bottom: 0;
+    }
+    .slogan{
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: 5px;
+    }
+    /*导航*/
+    .content .sidebar,.sidebar_list.over{
+        float: none;
+        position: fixed;
+        width: 100%;
+        margin-left: 0;
+        top: 86px;
+        bottom: auto;
+        left: 0;
+        height: auto;
+        padding-bottom: 0;
+        background: #FFF;
+    }
+    .sidebar .sidebar_list{
+        width: 100%;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        border-radius: 0;
+        border-bottom: 1px solid #0e90d2;
+        box-shadow: 0 2px 2px 0 #CCC;
+    }
+    .sidebar_list li{
+        float: left;
+        width: auto;
+        padding:5px;
+        margin:2px;
+        font-size: 12px;
+        border:1px solid #DDD;
+        border-radius: 2px;
+    }
+    .sidebar_list li.cur{
+        border-left-width: 1px;
+        border-color: #0e90d2;
+    }
+    /*关于*/
+    .about .sidebar{
+        display: none;
+    }
+    .about .main-wrap{
+        padding-top: 80px;
+        line-height: 1.5;
+    }
+    /*主内容*/
+    .col-main{
+        width: auto;
+    }
+    .main-wrap{
+        padding-top: 175px;
+    }
+    .col-main{
+        float: none;
+    }
+    .content .mainarea{
+        width: auto;
+        font-size: 12px;
+    }
+    .content .mainarea li a{
+        padding: 5px;
+    }
+    .content .mainarea,.col-main .mainarea.over{
+        float: none;
+        margin-left: 0;
+        padding:5px;
+    }
+    .item ul{
+        margin:10px 0;
+    }
+    .item ul li{
+        margin: 0 5px 5px 5px;
+    }
+    .item .mod{
+        padding-top: 10px;
+    }
+    .mainarea .mod .sub_mod{
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    /*底部*/
+    .footer {
+        margin-top:0px;
+        padding: 0;
+    }
+    .footer .footer_nav{
+        width: 100%;
+        font-size: 12px;
+    }
+    .footer .footer_nav li{
+        float: none;
+        padding: 2%;
+        width: 98%;
+    }
+    .footer_nav  .contact{
+        display:none;
+    }
+}
+/* @media screen (min-width:800px) and (max-width:1000px) {
     article {
         width:100%;
     }
@@ -468,8 +609,8 @@ legend {
         width:79%;
         padding:3%;
     }
-}
-@media screen and (max-width:800px) {
+}*/
+/*@media screen and (max-width:800px) {
     #header {
         overflow:hidden;
         padding:2%;
@@ -522,4 +663,4 @@ legend {
         display:inline-block;
         width:60%;
     }
-}
+}*/
