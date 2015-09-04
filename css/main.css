@@ -186,10 +186,6 @@ legend {
 
 /*温馨提示*/
 .tips{
-    color: #FF861A;
-    padding:10px 0;
-    font-size: 12px;
-    text-align: center;
     display: none;
 }
 /*底部*/
@@ -513,6 +509,10 @@ legend {
         display: none;
     }
     .tips{
+        color: #FF861A;
+        padding:10px 0;
+        font-size: 12px;
+        text-align: center;
         display: block;
     }
     /*导航*/
