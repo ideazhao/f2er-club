@@ -13,7 +13,6 @@ article {
 a {
     text-decoration:none;
 }
-
 form {
     background: #069;
     text-align: left;
@@ -185,6 +184,14 @@ legend {
     line-height: 20px;
 }
 
+/*温馨提示*/
+.tips{
+    color: #FF861A;
+    padding:10px 0;
+    font-size: 12px;
+    text-align: center;
+    display: none;
+}
 /*底部*/
 
 .footer {
@@ -349,6 +356,7 @@ legend {
 }
 .item{
  -webkit-animation:down-up .5s;
+ animation:down-up .5s;
 }
 @-webkit-keyframes down-up{
     0%{
@@ -463,8 +471,9 @@ legend {
     #header{
         padding-right: 0;
         position: fixed;
-       top:0;
+        top:0;
         width: 100%;
+        z-index: 10;
     }
     .main_title{
         padding: 5px 0 0 0;
@@ -497,18 +506,23 @@ legend {
         margin-bottom: 0;
     }
     .slogan{
-        width: 100%;
+        /*width: 100%;
         font-size: 12px;
         line-height: 1.2;
-        margin-top: 5px;
+        margin-top: 5px;*/
+        display: none;
+    }
+    .tips{
+        display: block;
     }
     /*导航*/
     .content .sidebar,.sidebar_list.over{
         float: none;
         position: fixed;
+        z-index: 10;
         width: 100%;
         margin-left: 0;
-        top: 86px;
+        top: 53px;
         bottom: auto;
         left: 0;
         height: auto;
@@ -550,7 +564,7 @@ legend {
         width: auto;
     }
     .main-wrap{
-        padding-top: 175px;
+        padding-top: 150px;
     }
     .col-main{
         float: none;
@@ -567,6 +581,10 @@ legend {
         margin-left: 0;
         padding:5px;
     }
+    .item{
+     -webkit-animation:paused;
+     animation:paused;
+    }
     .item ul{
         margin:10px 0;
     }
@@ -580,6 +598,12 @@ legend {
         padding-left: 10px;
         margin-top: 5px;
     }
+    .book .off:after{
+    left: 100%;
+    width: 40px;
+    bottom: 0px;
+    font-size: 12px;
+}
     /*底部*/
     .footer {
         margin-top:0px;
