@@ -541,7 +541,7 @@ legend {
     .sidebar_list li{
         float: left;
         width: auto;
-        padding:5px;
+        padding:8px 10px;
         margin:2px;
         font-size: 12px;
         border:1px solid #DDD;
