@@ -431,7 +431,6 @@ legend {
 }
 .public_media ul li{
     padding:15px;
-    position: relative;
 }
 .public_media ul li  .erwei{
     position: absolute;
@@ -439,6 +438,7 @@ legend {
     bottom:-115px;
     transition:.5s;
     display: none;
+    z-index: 10;
     background: #FFF;
     box-shadow: 0 0 8px 2px #CCC;
 }
