@@ -215,7 +215,10 @@ legend {
     line-height: 1.5;
 }
 .footer_nav ul li a{
-    color: #CCC;
+    color: #FFF;
+}
+.footer_nav ul li  .link_about,.footer_nav ul li  .link_about:hover{
+    text-decoration: underline;
 }
 .footer_nav ul li .author_img_blog {
     text-decoration: none;
@@ -463,6 +466,9 @@ legend {
 .about .mod a{
     color: #0e90d2;
 }
+.about .mod p{
+    line-height: 1.5;
+}
 @media screen and (max-width: 800px){
     body{
         font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;
@@ -625,7 +631,7 @@ legend {
         padding: 2%;
         width: 98%;
     }
-    .footer_nav  .contact{
+    .footer .contact{
         display:none;
     }
 }
