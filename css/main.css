@@ -257,9 +257,7 @@ legend {
 /*主内容区*/
 
 .col-main .mainarea{
-    margin-left: 250px;
-    min-height: 600px;
-    transition:.5s;
+    margin-left: 230px;
 }
 .col-main .mainarea.over{
     margin-left: 180px;
@@ -302,14 +300,15 @@ legend {
 .sidebar_list.over{
     position:fixed;
     top:86px;
-    left: 23px;
+    left: 0;
     bottom:100px;
-    width:134px;
+    width:184px;
+    transform:translateY(30px);
 }
 .content .mainarea {
     float: left;
-    width: 70%;
-   text-align:left;
+    width: 75%;
+    text-align:left;
     padding:20px 30px 10px 30px;
     display:none;
 }
@@ -360,8 +359,8 @@ legend {
 }
 @-webkit-keyframes down-up{
     0%{
-        -webkit-transform:translateY(200px) rotateZ(30deg);
-        transform:translateY(200px) rotateZ(30deg);
+        -webkit-transform:translateY(150px) rotateZ(10deg);
+        transform:translateY(150px) rotateZ(10deg);
         box-shadow: 0 0 4px 0 #CCC;
     }
     100%{
@@ -372,8 +371,8 @@ legend {
 }
 @keyframes down-up{
    0%{
-        -webkit-transform:translateY(200px) rotateZ(30deg);
-        transform:translateY(200px) rotateZ(30deg);
+        -webkit-transform:translateY(150px) rotateZ(10deg);
+        transform:translateY(150px) rotateZ(10deg);
         box-shadow: 0 0 4px 0 #CCC;
     }
     100%{
