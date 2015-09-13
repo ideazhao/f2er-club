@@ -35,14 +35,19 @@
 	     	       <section class="mod">
 	     		<h2>醉牛前端的由来</h2>
 	     		<p>不是因为有大牛，也不是因为你来了这里会更牛。而是因为它的专业和贴心。它懂你需要什么，你要就给你~</p>
+	     		<p>想了解更多请看<a href="https://github.com/linggan100/notebook/issues/8" target="_blank">醉牛前端诞生记</a></p>
 	     	       </section>
      		       <section class="mod">
 	     		<h2>这里有什么</h2>
 	     		<p>前端社区？大牛博客？好书？公众号？组件？动画库？手册？工具？等等等<br>你是否苦于寻找它们？又是否迟迟找不到答案？我把它们全都给你，解放你的收藏夹，让它只做最重要的事情，比如，你可以从这里拿一些放上去，剩下的一个位置，就给我吧！~</p>
      		       </section>
-     		       <section class="mod">
+     		       <section class="mod part-in">
 	     		<h2>你也想参与？</h2>
-	     		<p><a href="https://github.com/linggan100/F2er-notebook" target="_blank">请戳这里</a></p>
+	     		<p>
+	     		<a href="https://github.com/linggan100/notebook/issues/2" target="_blank" class="suggest">综合建议</a>
+	     		<a href="https://github.com/linggan100/notebook/issues/3" target="_blank" class="new-cont">提供内容</a>
+	     		<a href="https://github.com/linggan100/notebook/issues/1" target="_blank" class="exp">体验优化</a>
+	     		<a href="https://github.com/linggan100/notebook/issues/4" target="_blank" class="error">链接勘误</a></p>
      		       </section>
 	            </article>
 	    </section>
@@ -70,12 +75,18 @@
 	               </section>
 	             </li>
 	             <li>
-	               <a href="about.html" class="link_about">关于本站</a>
-	               <p>本站涉及一些优秀攻城狮的优秀博客、社区，实用的手册、工具、框架/库，以及在线教程和书籍推荐。为大家解决一些基本的，常见的问题和需求。</p>
+	               <p>本站涉及一些优秀攻城狮的优秀博客、社区，实用的手册、工具、框架/库，以及在线教程和书籍推荐。为大家解决一些基本的，常见的问题和需求。<a href="about.html" class="link_about">轻戳这里了解更多</a></p>
 	             </li>
 	      </ul>
 	    </nav>
 	  </footer>
     </article>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		var $win=$(window).height();
+		$('.col-main .mainarea').css("min-height",$win-269+'px');
+    	})
+    </script>
 </body>
 </html>

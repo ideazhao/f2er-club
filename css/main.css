@@ -55,7 +55,7 @@ legend {
 .main-wrap{margin:0 auto;text-align:left;}
 .col-main {float:left; width:100%;  min-height:1px;}
 .col-sub, .col-extra {float:left;}
-.layout:after, .main-wrap:after, .col-sub:after, .col-extra:after {content:'\20'; display:block; height:0; clear:both;visibility: hidden;}
+.layout:after, .main-wrap:after, .col-sub:after, .col-extra:after,.item ul:after{content:'\20'; display:block; height:0; clear:both;visibility: hidden;}
 .layout, .main-wrap, .col-sub, .col-extra {*zoom:1;}
 
 /*浮动*/
@@ -300,7 +300,7 @@ legend {
 .sidebar_list.over{
     position:fixed;
     top:86px;
-    left: 0;
+    left: 23px;
     bottom:100px;
     width:184px;
     transform:translateY(30px);
@@ -325,6 +325,25 @@ legend {
 }
 .mainarea ul li {
     margin-bottom:10px;
+}
+.mainarea ul li .tip-pop{
+    position: absolute;
+    top:100%;
+    left: 20%;
+    padding:5px;
+    display: none;
+    border-radius: 5px;
+    background: #FFF;
+    min-width: 150px;
+    text-align: left;
+    box-shadow: 0 0 2px 2px #CCC;
+    z-index: 10;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #0e90d2;
+}
+.mainarea ul li:hover .tip-pop{
+    display:block;
 }
 .mainarea ul li a sup {
     color:#F00;
@@ -382,7 +401,6 @@ legend {
     }
 }
 .item ul {
-    overflow:hidden;
     padding:5px 0;
     margin:20px 0 0 0;
 }
@@ -428,12 +446,6 @@ legend {
 .public_media{
     padding-bottom: 50px;
 }
-.public_media ul{
-    padding-bottom: 120px;
-}
-.public_media ul li{
-    padding:15px;
-}
 .public_media ul li  .erwei{
     position: absolute;
     left: 0;
@@ -450,6 +462,7 @@ legend {
 }
 .public_media ul li:hover .erwei{
     display:block;
+    z-index: 10;
 }
 
 /*about*/
@@ -467,6 +480,29 @@ legend {
 }
 .about .mod p{
     line-height: 1.5;
+}
+
+/*参与*/
+
+.about .part-in a{
+    display:inline-block;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: #FFF;
+}
+.part-in a:hover{text-decoration:none;}
+.part-in .suggest{
+    background: #47524C;
+}
+.part-in .new-cont{
+    background: #2975C2;
+}
+.part-in .exp{
+    background: #4AB232;
+}
+.part-in  .error{
+    background: #FF5F52;
 }
 @media screen and (max-width: 800px){
     body{
