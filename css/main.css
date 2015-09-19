@@ -464,7 +464,54 @@ legend {
     display:block;
     z-index: 10;
 }
+/*文章*/
 
+.article ul li{
+    float: none;
+    margin:0;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border: none;
+    text-align: left;
+    overflow: hidden;
+    width: 50%;
+    padding-left: 30px;
+    cursor: inherit;
+}
+.article ul li a{
+    padding: 0;
+    display:inline-block;
+    width: 70%;
+    color: #1BB83B;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mainarea.article ul li a:hover{
+    color:#3ACA57 ;
+    text-decoration: underline;
+}
+.article ul li .article-author{
+    float: right;
+    margin-left: 20px;
+    width: 100px;
+    color: #888;
+    position: relative;
+    text-align: left;
+}
+.article ul li .article-author:before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 30px;
+    height: 0;
+    border-bottom: 1px solid #888;
+}
+.article ul li:hover {
+    box-shadow:none;
+    transform:none;
+}
 /*about*/
 
 .about .mod{
@@ -503,6 +550,9 @@ legend {
 }
 .part-in  .error{
     background: #FF5F52;
+}
+.part-in  .update-log{
+    background: #EBAE2C;
 }
 @media screen and (max-width: 800px){
     body{
