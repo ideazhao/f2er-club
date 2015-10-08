@@ -118,6 +118,7 @@ legend {
     background:#2e9df7;
     -o-box-shadow:0 2px 5px 0px #CCC;
     box-shadow:0 2px 5px 0px #CCC;
+    padding-right:  calc( 50px - 100vw + 100% );
 }
 .main_title {
     padding: 10px 10px 28px 20px;
@@ -195,6 +196,7 @@ legend {
     margin-top: 20px;
     padding: 20px 0;
     color: #CCC;
+    padding-right: calc( 20px - 100vw - 100% );
 }
 .footer .footer_nav {
     width: 980px;
