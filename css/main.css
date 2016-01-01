@@ -3,7 +3,7 @@
 /* CSS Document */
  body {
     font-size: 14px;
-    font-family: "Microsoft YaHei";
+    font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, Arial,sans-serif;
     text-align: center;
 }
 article {
@@ -281,10 +281,11 @@ legend {
     text-align:center;
     width:100%;
     padding:10px 0;
+    font-size: 14px;
 }
 .sidebar li:hover,
  .sidebar li.cur{
-    background:#F5F5F5;
+    background:#EDEDED;
     border-left:3px solid #0e90d2;
     transition:.3s;
 }
@@ -295,6 +296,24 @@ legend {
 }
 .sidebar li a {
     color:#000;
+}
+.sidebar li.side-about{
+    background: #31AAE8;
+    cursor: pointer;
+    transition:.5s;
+    margin-top: 20px;
+    padding: 0;
+}
+.sidebar li.side-about a{
+    color: #FFF;
+    display:block;
+    width: 100%;
+    line-height: 34px;
+}
+.sidebar li.side-about:hover{
+    border-radius: 10px;
+    border: none;
+    background: #1A9DE0;
 }
 .sidebar_list{
     transition:.5s;
@@ -410,7 +429,7 @@ legend {
     float:left;
     width:auto;
     border:1px solid #0e90d2;
-    border-radius:4px;
+    border-radius:5px;
     text-align:center;
     margin:0 10px 10px 5px;
     cursor: pointer;
@@ -476,7 +495,7 @@ legend {
     border: none;
     text-align: left;
     overflow: hidden;
-    width: 50%;
+    width: 80%;
     padding-left: 30px;
     cursor: inherit;
 }
@@ -484,7 +503,7 @@ legend {
     padding: 0;
     display:inline-block;
     width: 70%;
-    color: #1BB83B;
+    color: #037B1C;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -558,7 +577,7 @@ legend {
 }
 @media screen and (max-width: 800px){
     body{
-        font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, Arial,sans-serif;
     }
     a{
         -webkit-tap-highlight-color:rgba(255,255,255,0);
