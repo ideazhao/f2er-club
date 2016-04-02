@@ -1,6 +1,6 @@
 $(function () {
     var $li = $('aside ul li');
-    var $area = $('article.mainarea');
+    var $area = $('article.mainarea.item');
     var $win = $(window).height();
 
     // 渲染页面
