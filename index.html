@@ -48,7 +48,10 @@
         <section class='col-main'>
           <p class="tips">温馨提示：为了您的体验更佳，请在PC端使用</p>
           <!--手册、工具-->
-          <article class="mainarea item" style="display:block;">
+          <article class="mainarea" style="display: block;">
+            loading...
+          </article>
+          <article class="mainarea item">
                 <section class="mod">
                     <h3>手册</h3>
                     <section class="sub_mod">
@@ -1885,32 +1888,32 @@
         <!-- 左侧边栏导航 [[ -->
         <aside class="sidebar col-sub">
               <ul class="sidebar_list radius">
-                    <li class="cur">
-                      <a href="javascript:scroll(0,0);">手册/工具</a>
+                    <li>
+                      <a href="#tools">手册/工具</a>
                     </li>
                     <li>
-                      <a href="javascript:scroll(0,0);">常用组件/插件</a>
+                      <a href="#plugin">常用组件/插件</a>
                     </li>
                     <li>
-                      <a href="javascript:scroll(0,0);">框架/库</a>
+                      <a href="#framework">框架/库</a>
                     </li>
                     <li>
-                      <a href="javascript:scroll(0,0);">方案荟萃/常见问题</a>
+                      <a href="#qa">方案荟萃/常见问题</a>
                     </li>
                     <li>
-                      <a href="javascript:scroll(0,0);">资料/书籍/教程</a>
+                      <a href="#course">资料/书籍/教程</a>
                     </li>
                     <li>
-                      <a href="javascript:scroll(0,0);">博客/社区</a>
+                      <a href="#blog">博客/社区</a>
                     </li>
                     <li>
-                      <a href="javascript:scroll(0,0);">电子读物/公众号/微博号</a>
+                      <a href="#weibo">电子读物/公众号/微博号</a>
                     </li>
                     <li>
-                      <a href="javascript:scroll(0,0);">活动/会议</a>
+                      <a href="#activity">活动/会议</a>
                     </li>
-                    <li><a href="javascript:scroll(0,0);">佳文选摘</a></li>
-                    <li><a href="javascript:scroll(0,0);">Demo</a></li>
+                    <li><a href="#article">佳文选摘</a></li>
+                    <li><a href="#demo">Demo</a></li>
                     <li class="side-about"><a href="about.html">关于本站</a></li>
               </ul>
         </aside>
@@ -1939,30 +1942,6 @@
     </footer>
   </article>
   <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript">
-      $(function(){ 
-          var $li=$("aside ul li")
-          var $area=$("article.mainarea");
-          var $win=$(window).height();
-              /*显示不同区块*/
-              $li.click(function(){
-                          $(this).addClass('cur').siblings().removeClass('cur');
-                var $que=$(this).index();
-                $area.eq($que).show().siblings("article").hide();  
-              })
-              /*页面向下滚动侧边栏和主内容进行相应行为*/
-              $(window).scroll(function(){
-              
-              var $Height=$(window).scrollTop();  
-              
-              if($Height>105){
-                    $(".sidebar_list").addClass('over');
-              } else{
-                    $(".sidebar_list").removeClass('over');
-                    }
-              })
-        $('.col-main .mainarea').css("min-height",$win-269+'px');
-        })
-</script>
+  <script type="text/javascript" src="js/page.js"></script>
 </body>
 </html>
