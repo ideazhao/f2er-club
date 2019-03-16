@@ -115,7 +115,7 @@ legend {
 #header {
     padding: 10px 50px 10px 10px;
     text-align: left;
-    background:#2e9df7;
+    background:linear-gradient(to bottom, #6BB1EA 5%, #2190ea 6%, #2190ea 95%,#4aa5da 100%);
     -o-box-shadow:0 2px 5px 0px #CCC;
     box-shadow:0 2px 5px 0px #CCC;
     padding-right:  calc( 50px - 100vw + 100% );
@@ -399,26 +399,30 @@ legend {
 }
 @-webkit-keyframes down-up{
     0%{
-        -webkit-transform:translateY(150px) rotateZ(10deg);
-        transform:translateY(150px) rotateZ(10deg);
+        -webkit-transform:translateY(50px);
+        transform:translateY(50px);
         box-shadow: 0 0 4px 0 #CCC;
+        opacity: 0;
     }
     100%{
         -webkit-transform:none;
         transform:none;
         box-shadow: none;
+        opacity: 1;
     }
 }
 @keyframes down-up{
    0%{
-        -webkit-transform:translateY(150px) rotateZ(10deg);
-        transform:translateY(150px) rotateZ(10deg);
+        -webkit-transform:translateY(50px);
+        transform:translateY(50px);
         box-shadow: 0 0 4px 0 #CCC;
+        opacity: 0;
     }
     100%{
         -webkit-transform:none;
         transform:none;
         box-shadow: none;
+        opacity: 1;
     }
 }
 .item ul {
