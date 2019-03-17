@@ -1632,9 +1632,9 @@
               var $Height=$(window).scrollTop();  
               
               if($Height>105){
-                    $(".sidebar_list").addClass('over');
+                    $(".sidebar_list,.main-wrap").addClass('over');
               } else{
-                    $(".sidebar_list").removeClass('over');
+                    $(".sidebar_list,.main-wrap").removeClass('over');
                     }
               })
         $('.col-main .mainarea').css("min-height",$win-269+'px');
