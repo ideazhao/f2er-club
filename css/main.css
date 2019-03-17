@@ -630,10 +630,11 @@ legend {
     }
     .tips{
         color: #FF861A;
-        padding:10px 0;
+        padding:5px 0;
         font-size: 12px;
         text-align: center;
         display: block;
+        background: #f5ebde;
     }
     /*导航*/
     .content .sidebar{
@@ -689,8 +690,17 @@ legend {
         display: none;
     }
     .about .main-wrap{
-        padding-top: 80px;
+        padding-top: 54px;
         line-height: 1.5;
+    }
+    .about .content .mainarea{
+        padding:0 1.5rem;
+    }
+    .about .item .mod.part-in {
+        padding-bottom: 1rem;
+    }
+    .about .item .mod.part-in a{
+        margin-top: .5rem;
     }
     /*主内容*/
     .col-main{
