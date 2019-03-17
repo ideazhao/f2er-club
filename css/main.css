@@ -3,7 +3,8 @@
 /* CSS Document */
  body {
     font-size: 14px;
-    font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, Arial,sans-serif;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
     text-align: center;
 }
 article {
@@ -625,10 +626,6 @@ legend {
         margin-bottom: 0;
     }
     .slogan{
-        /*width: 100%;
-        font-size: 12px;
-        line-height: 1.2;
-        margin-top: 5px;*/
         display: none;
     }
     .tips{
@@ -639,7 +636,7 @@ legend {
         display: block;
     }
     /*导航*/
-    .content .sidebar,.sidebar_list.over{
+    .content .sidebar{
         float: none;
         position: fixed;
         z-index: 10;
@@ -654,12 +651,17 @@ legend {
     }
     .sidebar .sidebar_list{
         width: 100%;
+        box-sizing: border-box;
         margin:0;
         padding:0;
         overflow: hidden;
         border-radius: 0;
-        border-bottom: 1px solid #0e90d2;
+        padding: 1rem;
         box-shadow: 0 2px 2px 0 #CCC;
+
+    }
+    .sidebar .sidebar_list.over{
+        display: none;
     }
     .sidebar_list li{
         float: left;
@@ -673,6 +675,12 @@ legend {
     .sidebar_list li.cur{
         border-left-width: 1px;
         border-color: #0e90d2;
+        background: transparent;
+    }
+    .sidebar li.side-about{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
     /*关于*/
     .about .sidebar{
@@ -697,7 +705,7 @@ legend {
         font-size: 12px;
     }
     .content .mainarea li a{
-        padding: 5px;
+        padding: 1rem;
     }
     .content .mainarea,.col-main .mainarea.over{
         float: none;
@@ -713,6 +721,7 @@ legend {
     }
     .item ul li{
         margin: 0 5px 5px 5px;
+        border-color: #accdde;
     }
     .item .mod{
         padding-top: 10px;

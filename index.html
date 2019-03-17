@@ -1614,7 +1614,7 @@
         </nav>
     </footer>
   </article>
-  <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript">
       $(function(){ 
           var $li=$("aside ul li")
@@ -1632,9 +1632,9 @@
               var $Height=$(window).scrollTop();  
               
               if($Height>105){
-                    $(".sidebar_list").addClass('over');
+                    $(".sidebar_list,.main-wrap").addClass('over');
               } else{
-                    $(".sidebar_list").removeClass('over');
+                    $(".sidebar_list,.main-wrap").removeClass('over');
                     }
               })
         $('.col-main .mainarea').css("min-height",$win-269+'px');
