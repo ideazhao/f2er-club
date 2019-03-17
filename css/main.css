@@ -677,10 +677,12 @@ legend {
         border-color: #0e90d2;
         background: transparent;
     }
-    .sidebar li.side-about{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+    .sidebar_list li.side-about{
+        margin:2px;
+        padding: 8px 10px;
+    }
+    .sidebar_list li.side-about a{
+        line-height: 1;
     }
     /*关于*/
     .about .sidebar{
@@ -695,7 +697,7 @@ legend {
         width: auto;
     }
     .main-wrap{
-        padding-top: 160px;
+        padding-top: 226px;
     }
     .col-main{
         float: none;
@@ -754,69 +756,3 @@ legend {
         display:none;
     }
 }
-/* @media screen (min-width:800px) and (max-width:1000px) {
-    article {
-        width:100%;
-    }
-    .content {
-        padding:0 2%;
-    }
-    .mainarea {
-        width:79%;
-        padding:3%;
-    }
-}*/
-/*@media screen and (max-width:800px) {
-    #header {
-        overflow:hidden;
-        padding:2%;
-        margin:0;
-    }
-    #header hgroup {
-        float:left;
-    }
-    #header cite {
-        float:right;
-        padding-top:8%;
-    }
-    article {
-        width:100%;
-    }
-    .content {
-        width:100%;
-        -webkit-flex-flow: column;
-    }
-    .content .sidebar {
-        width:100%;
-        height:auto;
-        background:none;
-    }
-    .radius {
-        -webkit-border-radius:0;
-    }
-    .content .sidebar ul {
-        overflow:hidden;
-        margin:0;
-        width:auto;
-    }
-    .content .sidebar ul li {
-        float:left;
-        width:18%;
-        border-top:none;
-        border-bottom:1px solid #CCC;
-        margin:0 1%;
-    }
-    .content .mainarea {
-        width:96%;
-        padding:2%;
-    }
-    .mainarea ul li {
-        border-bottom:1px solid #999;
-        padding:10px 0;
-        margin:0;
-    }
-    .mainarea ul li span {
-        display:inline-block;
-        width:60%;
-    }
-}*/
