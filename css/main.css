@@ -762,8 +762,8 @@ legend {
     }
     .footer .footer_nav li{
         float: none;
-        padding: 2%;
-        width: 98%;
+        padding: 1rem 1.5rem;
+        width: auto;
     }
     .footer .contact{
         display:none;
