@@ -629,11 +629,14 @@ legend {
         display: none;
     }
     .tips{
-        color: #FF861A;
-        padding:5px 0;
+        color: #ea9242;
+        padding:8px 0;
         font-size: 12px;
         text-align: center;
+        position: fixed;
         display: block;
+        top: 53px;
+        width:100%;
         background: #f5ebde;
     }
     /*导航*/
@@ -690,7 +693,7 @@ legend {
         display: none;
     }
     .about .main-wrap{
-        padding-top: 54px;
+        padding-top: 84px;
         line-height: 1.5;
     }
     .about .content .mainarea{
