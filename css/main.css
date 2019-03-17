@@ -106,9 +106,9 @@ legend {
 /*effect*/
 
  .radius {
-    -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
+    border-radius: 5px;
 }
 
 /*头部*/
