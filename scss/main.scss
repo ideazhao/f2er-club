@@ -4,7 +4,6 @@
 @import "mod/_header";
 @import "mod/_about";
 @import "mod/_footer";
-@import "mod/_media";
 
 /*主内容区*/
 
@@ -288,3 +287,192 @@
     transform:none;
 }
 
+@media screen and (max-width: 800px){
+    body{
+        font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, Arial,sans-serif;
+    }
+    a{
+        -webkit-tap-highlight-color:rgba(255,255,255,0);
+    }
+    /*头部*/
+    #header{
+        padding-right: 0;
+        position: fixed;
+        top:0;
+        width: 100%;
+        z-index: 10;
+    }
+    .main_title{
+        padding: 5px 0 0 0;
+        font-size: 14px;
+        width: 100%;
+    }
+    .main_title i{
+        width: 30px;
+        height: 30px;
+    }
+    .main_title .red{
+        background-size: 30px;
+        left: 20px;
+        top:-10px;
+    }
+    .main_title .blue{
+        background-size: 30px;
+        left: 5px;
+        top:0;
+    }
+    .main_title .green{
+        background-size: 30px;
+        left: 35px;
+        top:0;
+    }
+    .main_title .title-txt{
+        margin-left: 70px;
+    }
+    .main_title .title-txt h1{
+        margin-bottom: 0;
+    }
+    .slogan{
+        display: none;
+    }
+    .tips{
+        color: #ea9242;
+        padding:8px 0;
+        font-size: 12px;
+        text-align: center;
+        position: fixed;
+        display: block;
+        top: 53px;
+        width:100%;
+        background: #f5ebde;
+    }
+    /*导航*/
+    .content .sidebar{
+        float: none;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        margin-left: 0;
+        top: 53px;
+        bottom: auto;
+        left: 0;
+        height: auto;
+        padding-bottom: 0;
+        background: #FFF;
+    }
+    .sidebar .sidebar_list{
+        width: 100%;
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        border-radius: 0;
+        padding: 1rem;
+        box-shadow: 0 2px 2px 0 #CCC;
+
+    }
+    .sidebar .sidebar_list.over{
+        display: none;
+    }
+    .sidebar_list li{
+        float: left;
+        width: auto;
+        padding:8px 10px;
+        margin:2px;
+        font-size: 12px;
+        border:1px solid #DDD;
+        border-radius: 2px;
+    }
+    .sidebar_list li.cur{
+        border-left-width: 1px;
+        border-color: #0e90d2;
+        background: transparent;
+    }
+    .sidebar_list li.side-about{
+        margin:2px;
+        padding: 8px 10px;
+    }
+    .sidebar_list li.side-about a{
+        line-height: 1;
+    }
+    /*关于*/
+    .about .sidebar{
+        display: none;
+    }
+    .about .main-wrap{
+        padding-top: 84px;
+        line-height: 1.5;
+    }
+    .about .content .mainarea{
+        padding:0 1.5rem;
+    }
+    .about .item .mod.part-in {
+        padding-bottom: 1rem;
+    }
+    .about .item .mod.part-in a{
+        margin-top: .5rem;
+    }
+    /*主内容*/
+    .col-main{
+        width: auto;
+    }
+    .main-wrap{
+        padding-top: 226px;
+    }
+    .col-main{
+        float: none;
+    }
+    .content .mainarea{
+        width: auto;
+        font-size: 12px;
+    }
+    .content .mainarea li a{
+        padding: 1rem;
+    }
+    .content .mainarea,.col-main .mainarea.over{
+        float: none;
+        margin-left: 0;
+        padding:5px;
+    }
+    .item{
+     -webkit-animation:paused;
+     animation:paused;
+    }
+    .item ul{
+        margin:10px 0;
+    }
+    .item ul li{
+        margin: 0 5px 5px 5px;
+        border-color: #accdde;
+    }
+    .item .mod{
+        padding-top: 10px;
+    }
+    .mainarea .mod .sub_mod{
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    .book .off:after{
+    left: 100%;
+    width: 40px;
+    bottom: 0px;
+    font-size: 12px;
+}
+    /*底部*/
+    .footer {
+        margin-top:0px;
+        padding: 0;
+    }
+    .footer .footer_nav{
+        width: 100%;
+        font-size: 12px;
+    }
+    .footer .footer_nav li{
+        float: none;
+        padding: 1rem 1.5rem;
+        width: auto;
+    }
+    .footer .contact{
+        display:none;
+    }
+}
