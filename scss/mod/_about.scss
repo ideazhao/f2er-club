@@ -1,0 +1,48 @@
+/*about*/
+
+.about {
+    .mod {
+      margin-top: 13px;
+      border: none;
+      h2 {
+        color: #0e90d2;
+        margin-bottom: 20px;
+      }
+      a {
+        color: #0e90d2;
+      }
+      p {
+        line-height: 1.5;
+      }
+    }
+    .part-in a {
+      display: inline-block;
+      padding: 5px 8px;
+      border-radius: 4px;
+      margin-right: 5px;
+      color: #FFF;
+    }
+  }
+  
+  /*参与*/
+  
+  .part-in {
+    a:hover {
+      text-decoration: none;
+    }
+    .suggest {
+      background: #47524C;
+    }
+    .new-cont {
+      background: #2975C2;
+    }
+    .exp {
+      background: #4AB232;
+    }
+    .error {
+      background: #FF5F52;
+    }
+    .update-log {
+      background: #EBAE2C;
+    }
+  }
