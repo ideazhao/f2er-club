@@ -1,0 +1,85 @@
+/*头部*/
+
+#header {
+    padding: 10px 50px 10px 10px;
+    text-align: left;
+    background: linear-gradient(to bottom, #6BB1EA 5%, #2190ea 6%, #2190ea 95%, #4aa5da 100%);
+    -o-box-shadow: 0 2px 5px 0px #CCC;
+    box-shadow: 0 2px 5px 0px #CCC;
+    padding-right: calc( 50px - 100vw + 100% );
+  }
+  
+  .main_title {
+    padding: 10px 10px 28px 20px;
+    font-size: 34px;
+    color: #FFF;
+    .logo {
+      width: 300px;
+      a {
+        display: block;
+        position: relative;
+        color: #FFF;
+      }
+    }
+    i {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      transition: .5s;
+    }
+    .red {
+      background: url(../img/logo_icon_r.png) no-repeat;
+      background-size: 60px;
+      left: 20px;
+      top: -10px;
+    }
+    .blue {
+      background: url(../img/logo_icon_b.png) no-repeat;
+      background-size: 60px;
+      left: 5px;
+      top: 15px;
+    }
+    .green {
+      background: url(../img/logo_icon_g.png) no-repeat;
+      background-size: 60px;
+      left: 35px;
+      top: 15px;
+    }
+  }
+  
+  .logo a:hover {
+    .red {
+      top: 0px;
+    }
+    .blue {
+      top: 0px;
+      left: -5px;
+    }
+    .green {
+      top: 0px;
+      left: 45px;
+    }
+  }
+  
+  .main_title .title-txt {
+    margin-left: 100px;
+    text-align: center;
+    h1 {
+      margin-bottom: -10px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+  
+  .slogan {
+    color: #FFF;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+  
+  /*温馨提示*/
+  
+  .tips {
+    display: none;
+  }

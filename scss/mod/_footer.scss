@@ -1,0 +1,74 @@
+/*底部*/
+
+.footer {
+    background: #4C4747;
+    margin-top: 20px;
+    padding: 20px 0;
+    color: #CCC;
+    padding-right: calc( 20px - 100vw - 100% );
+    .footer_nav {
+      width: 980px;
+      margin: 0 auto;
+    }
+  }
+  
+  .footer_nav ul {
+    overflow: hidden;
+    text-align: left;
+    li {
+      float: left;
+      width: 420px;
+      padding: 0 20px;
+      list-style: none;
+      line-height: 20px;
+      .author_info {
+        line-height: 1.5;
+      }
+      a {
+        color: #FFF;
+      }
+      .link_about {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .author_img_blog {
+        text-decoration: none;
+        transition: .3s;
+      }
+      a:hover {
+        color: #FFF;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  /*作者*/
+  
+  .author {
+    font-style: normal;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      vertical-align: middle;
+      transition: .5s;
+    }
+  }
+  
+  .contact_cont {
+    margin-left: 30px;
+  }
+  
+  .author {
+    img:hover {
+      -webkit-transform: rotateZ(360deg);
+      transform: rotateZ(360deg);
+    }
+    time {
+      padding: 0 5px;
+      font-size: 12px;
+      font-style: italic;
+    }
+  }

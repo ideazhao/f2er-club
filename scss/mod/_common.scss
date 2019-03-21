@@ -1,0 +1,110 @@
+/* CSS Document */
+ body {
+    font-size: 14px;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
+    text-align: center;
+}
+article {
+    margin: 0 auto;
+    padding: 0;
+}
+a {
+    text-decoration:none;
+}
+form {
+    background: #069;
+    text-align: left;
+    transition: 2s;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+label {
+    padding: 8px;
+    display: inline-block;
+    line-height: 20px;
+    height: 20px;
+    color: #CC3;
+    margin: 0;
+}
+input {
+    outline: none;
+    border: 1px solid #999;
+    padding: 3px 0;
+    border-radius: 5px;
+    height: 20px;
+}
+input:focus {
+    box-shadow: inset 0 0 4px #00FF99;
+    background: #CF9;
+}
+legend {
+    color: #FFF;
+    text-shadow: 0 0 3px #999999;
+    margin: 0;
+    padding: 0;
+}
+
+/*大结构布局*/
+
+.main-wrap{margin:0 auto;text-align:left;}
+.col-main {float:left; width:100%;  min-height:1px;}
+.col-sub, .col-extra {float:left;}
+.layout:after, .main-wrap:after, .col-sub:after, .col-extra:after,.item ul:after{content:'\20'; display:block; height:0; clear:both;visibility: hidden;}
+.layout, .main-wrap, .col-sub, .col-extra {*zoom:1;}
+
+/*浮动*/
+
+.left_part{float:left;}
+.right_part{float:right;}
+
+/*小区块布局*/
+
+.fl{float:left;}
+.fr{float:right;}
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+/*字体*/
+
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f24{font-size:24px;}
+
+.fs{font-family:'宋体';}
+.fw{font-family:'微软雅黑';}
+.fa{font-family:Arial, Helvetica, sans-serif;}
+
+/*内容布局*/
+
+.tc{text-align:center;}
+.tr{text-align:right;}
+.tl{text-align:left;}
+
+/*显示与溢出处理*/
+
+.dn{display:none;}
+.db{display:block;}
+.dib{-moz-inline-stack:inline-block; display:inline-block;}
+.di{display:inline;}
+.ovh{overflow:hidden;}
+.ovs{overflow:scroll;}
+.vh{visibility:hidden;}
+.vv{visibility:visible;}
+
+
+/*effect*/
+
+ .radius {
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
