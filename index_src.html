@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords" content="醉牛前端，前端人的俱乐部，资源导航" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="涉及一些优秀攻城狮的优秀博客、社区，实用的手册、工具，框架/库，以及在线教程和书籍推荐。为大家解决一些基本的，常见的问题和需求做专业的前端平台，提供你需要的东西。解放你的收藏夹，让它们只做最主要的事情" />
+    <meta name="author" content="赵侦镐" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>前端人的俱乐部</title>
+    <script src="js/html5shiv.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?a75b20e2c0f722c6e4bf18380088449f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <article>
+        <!-- 头部 [[ -->
+        <header id='header' class='clearfix'>
+            <div class="main_title fl">
+                <div class="logo fl">
+                    <a href="http://f2er.club/"> <i class="red"></i> <i class="blue"></i>
+                        <i class="green"></i>
+                    </a>
+                </div>
+                <div class="fl title-txt">
+                    <h1>醉牛前端</h1>
+                    <span>最专业&nbsp;&nbsp;最懂你</span>
+                </div>
+            </div>
+            <h2 class="slogan fr">
+                做专业的前端平台，提供你需要的东西
+                <br>解放你的收藏夹，让它们只做最主要的事情</h2>
+        </header>
+        <!-- 头部 ]] -->
+        <!-- 内容区 [[ -->
+        <section class="layout main-wrap  content">
+            <section class='col-main'>
+                <p class="tips">温馨提示：为了您的体验更佳，请在电脑端使用</p>
+                <!--手册、工具-->
+                <article class="mainarea item" style="display:block;">
+                    <!-- 手册 -->
+                    <!--include "./mod/handbook.html"-->
+                    <!-- 工具 -->
+                    <!--include "./mod/tools.html"-->
+                    <!-- 代码在线演示 -->
+                    <!--include "./mod/code_online.html"-->
+                </article>
+                <!--常用组件-->
+                <article class="mainarea item">
+                    <!-- 常用组件 -->
+                    <!--include "./mod/assembly.html"-->
+                </article>
+                <!--框架、库-->
+                <article class="mainarea item">
+                    <!--include "./mod/frame.html"-->
+                </article>
+                <!--方案和常见问题-->
+                <article class="mainarea item">
+                    <!--include "./mod/scheme.html"-->
+                    <!--include "./mod/question.html"-->
+                </article>
+                <!--资料、书籍、教程-->
+                <article class="mainarea item">
+                    <!--include "./mod/material.html"-->
+                    <!--include "./mod/book.html"-->
+                    <!--include "./mod/tutorial.html"-->
+                </article>
+                <!--博客社区-->
+                <article class="mainarea item">
+                    <!--include "./mod/chinese_multi.html"-->
+                    <!--include "./mod/english_multi.html"-->
+                    <!--include "./mod/chinese_group.html"-->
+                    <!--include "./mod/english_group.html"-->
+                    <!--include "./mod/chinese_person.html"-->
+                    <!--include "./mod/english_person.html"-->     
+                </article>
+                <!--技术刊物、公众号、微博号-->
+                <article class="mainarea item">
+                    <!--include "./mod/it_industry.html"-->    
+                    <!--include "./mod/public_media.html"--> 
+                    <!--include "./mod/weibo.html"--> 
+                </article>
+                <!--活动、会议-->
+                <article class="mainarea item">
+                    <!--include "./mod/active_meeting.html"--> 
+                </article>
+                <!--佳文选摘-->
+                <article class="mainarea item article">
+                    <!--include "./mod/article.html"-->
+                </article>
+                <!--Demo-->
+                <article class="mainarea item">
+                    <!--include "./mod/demo.html"-->
+                </article>
+            </section>
+            <!--include "./mod/sidebar.html"-->
+        </section>
+        <!--include "./mod/footer.html"-->
+    </article>
+    <script src="https://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $li = $("aside ul li")
+            var $area = $("article.mainarea");
+            var $win = $(window).height();
+            /*显示不同区块*/
+            $li.click(function () {
+                $(this).addClass('cur').siblings().removeClass('cur');
+                var $que = $(this).index();
+                $area.eq($que).show().siblings("article").hide();
+            })
+            /*页面向下滚动侧边栏和主内容进行相应行为*/
+            $(window).scroll(function () {
+
+                var $Height = $(window).scrollTop();
+
+                if ($Height > 105) {
+                    $(".sidebar_list,.main-wrap").addClass('over');
+                } else {
+                    $(".sidebar_list,.main-wrap").removeClass('over');
+                }
+            })
+            $('.col-main .mainarea').css("min-height", $win - 269 + 'px');
+        })
+    </script>
+</body>
+
+</html>
