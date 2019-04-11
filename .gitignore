@@ -1,0 +1,7 @@
+#将被git忽略
+node_modules/ 
+.sass-cache/ 
+/config.rb
+/gulpfile.js
+/index_src.html
+/package.json
